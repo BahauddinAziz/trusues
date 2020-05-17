@@ -11,6 +11,7 @@ var account = {
 var search;
 
 
+
 // functions-DOM
 
 function getMasterKey(event){
@@ -25,13 +26,16 @@ async function setMasterKey(){
 function getAccount(event){
     let name = event.target.name;
     let val = event.target.value;
-    account = {
-        name : val
-    }
+    
+    account[name] = val; 
+    
 }
 
+
 async function addAccount(){
+    console.log(account)
     await trusuesContract.methods.addAccount(account.accountName,account.Username,account.Password).send({from : address});
+    console.log("done")
 }
 
 function setQuery(event){
@@ -39,6 +43,7 @@ function setQuery(event){
 }
 
 function getResult(){
+    console.log(address,masterKey, search)
     trusuesContract.methods.mySearch(address,masterKey,search).call().then(res => {console.log(res)})
 }
 
@@ -123,4 +128,5 @@ var abi =   [
       "type": "function"
     }
   ]
-var trusuesContract = new web3.eth.Contract(abi,address);
+var trusuesContract = new web3.eth.Contract(abi,"0x411fD19601Cb5b98B9321Ccf436FD63926A528E3");
+console.log(web3.currentProvider.selectedAddress)

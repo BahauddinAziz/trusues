@@ -12,13 +12,13 @@
         <button onclick="setMasterKey()">Set Master Key</button>
     </div><br>
     <div>
-        <input type="text" name="accountName" id="accountName" onchange="getAccount()" >
-        <input type="text" name="username" id="username" onchange="getAccount()" >
-        <input type="password" name="password" id="password" onchange="getAccount()" >
-        <button onclick="">Add Account</button>
+        <input type="text" name="accountName" id="accountName" onchange="getAccount(event)" >
+        <input type="text" name="Username" id="Username" onchange="getAccount(event)" >
+        <input type="password" name="Password" id="Password" onchange="getAccount(event)" >
+        <button onclick="addAccount()">Add Account</button>
     </div><br>
     <div>
-        <input type="text" name="query" id="query" onchange="setQuery()" >
+        <input type="text" name="query" id="query" onchange="setQuery(event)" >
         <button onclick="getResult()">Search</button>
     </div><br>
 </body>
