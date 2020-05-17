@@ -1,17 +1,5 @@
-// require packages.
-var Web3 = require('web3');
-var http = require('http');
-var fs = require('fs');
-
-
-// server-setup
-var server = http.createServer(function(req,res){
-    res.writeHead(200,{'Content-Type' : 'text/html'});
-    var myReadStream = fs.createReadStream(__dirname + '/index.html','utf8')
-    myReadStream.pipe(res);
-});
-
-server.listen(3000,'127.0.0.1');
+//enabling ethereum
+window.ethereum.enable()
 
 // varibles-DOM
 var masterKey;
@@ -55,7 +43,6 @@ function getResult(){
 }
 
 // varibles - contract
-
 var web3 = new Web3( Web3.givenProvider || 'HTTP://127.0.0.1:7545');
 var address = web3.currentProvider.selectedAddress;
 var abi =   [

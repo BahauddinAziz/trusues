@@ -8,7 +8,7 @@
 </head>
 <body>
     <div>
-        <input type="text" name="masterKey" id="masterKey" onchange="getMasterKey()" >
+        <input type="text" name="masterKey" id="masterKey" onchange="getMasterKey(event)" >
         <button onclick="setMasterKey()">Set Master Key</button>
     </div><br>
     <div>
@@ -22,5 +22,6 @@
         <button onclick="getResult()">Search</button>
     </div><br>
 </body>
+<script src="./web3.min.js"></script>
 <script src="./index.js"></script>
 </html>
