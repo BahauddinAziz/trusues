@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Trusues - ending trust-issues</title>
+</head>
+<body>
+    <div>
+        <input type="text" name="masterKey" id="masterKey" onchange="getMasterKey(event);" >
+        <button onclick="setMasterKey()">Set Master Key</button>
+    </div><br>
+    <div>
+        <input type="text" name="accountName" id="accountName" onchange="getAccount(event)" >
+        <input type="text" name="Username" id="Username" onchange="getAccount(event)" >
+        <input type="password" name="Password" id="Password" onchange="getAccount(event)" >
+        <button onclick="addAccount()">Add Account</button>
+    </div><br>
+    <div>
+        <input type="text" name="query" id="query" onchange="setQuery(event)" >
+        <button onclick="getResult()">Search</button>
+    </div><br>
+    <script src="../build/js/main.js"></script>
+</body>
+</html>
