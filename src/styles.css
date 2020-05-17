@@ -1,6 +1,7 @@
 body{
     height: 100vh;
     box-sizing: border-box;
+    margin: none;
     padding: none;
     display: flex;
     flex-direction: column;
@@ -8,10 +9,38 @@ body{
     align-items: center;
 }
 
-div{
+#masterKeydiv{
     display: flex;
-    align-items: center;
+}
+#addAccount{
+    display: flex;
+
+}
+#addAccount input{
+    display: flex;
+}
+
+#searchAccount{
+    display: flex;
+
+}
+#accounts{
+    border: solid 2px black;
+    display: flex;
     justify-content: center;
-    border: solid;
-    width: 50%;
+    align-items: center;
+    height: 500px;
+    width: 500px;
+}
+input{
+    border: skyblue solid;
+    margin-right: 10px;
+}
+
+button{
+    background-color: teal;
+    border: none;
+    padding: 5px;
+    margin: 2px black solid;
+    cursor: pointer;
 }
