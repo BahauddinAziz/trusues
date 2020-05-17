@@ -8,7 +8,7 @@ var privateKey;
 
 
 //enabling ethereum
-window.ethereum.enable()
+//window.ethereum.enable()
 
 // varibles-DOM
 var masterKey;
