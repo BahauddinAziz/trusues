@@ -9,29 +9,16 @@
 </head>
 <body>
     <header>
-        <b>Trusues</b> <br>
-        Password Manager <hr>
+        <div class="heading">
+            <b>Trusues</b> <br>
+        </div>
+            Password Manager <hr>
     </header>
     <nav>
         <a id="nav-items" href="login.html">Login</a> <br>
+        <a id="nav-items" href="signUp.html">Sign Up</a> <br>
     </nav>
 
-    <div id="masterKeydiv">
-        <input type="text" name="masterKey" id="masterKey" onchange="getMasterKey(event)" >
-        <button onclick="setMasterKey()">Set Master Key</button>
-    </div><br>
-    <div id="addAccount">
-        <input type="text" name="accountName" id="accountName" onchange="getAccount(event)" ><br>
-        <input type="text" name="Username" id="Username" onchange="getAccount(event)" ><br>
-        <input type="password" name="Password" id="Password" onchange="getAccount(event)" ><br>
-        <button onclick="addAccount()">Add Account</button>
-    </div><br>
-    <div id="searchAccount">
-        <input type="text" name="query" id="query" onchange="setQuery(event)" >
-        <button onclick="getResult()">Search</button>
-    </div><br>
-    <div id="accounts"></div>
-    <script src="./web3.min.js"></script>
-    <script src="./index.js"></script>
+    
 </body>
 </html>

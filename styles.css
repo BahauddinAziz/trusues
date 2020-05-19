@@ -10,8 +10,10 @@ body{
 header {
     color: chocolate; text-align: center; font-size: 0.5in; font-style: italic;
    }
+   .heading{
+     color: teal; text-align: center; font-size: 0.6in; font-style: oblique;
+   }
 
-   
    #nav-items{
     font-size: 1.1cm;
     color: rgb(24, 12, 2);
