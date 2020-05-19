@@ -1,147 +1,126 @@
 const Web3 = require('web3');
-// import EthCrypto from 'eth-crypto';
-
-
-// Eth-Crypto
-var privateKey;
-// var publicKey =  EthCrypto.publicKeyByPrivateKey(privateKey);
+const CryptoJS = require('crypto-js');
 
 
 //enabling ethereum
-//window.ethereum.enable()
+window.ethereum.enable()
 
 // varibles-DOM
 var masterKey;
+var passphrase;
 var account = {
-    "accountName" : "",
-    "Username" : "",
-    "Password" : ""
+  "accountName" : "test name",
+  "Username" : "bahauddin",
+  "Password" : "pass"
 }
 var search;
+var website;
+var credentials;
 
 
 
 // functions-DOM
 
-privateKey = 'ECAC051BFCE03D4C19D25355200738BE3B4F905C302B5351BEE3763CF36F30DA'
 
-function getMasterKey(event){
-    masterKey = event.target.value;
+window.getMasterKey = function(event){
+  masterKey = event.target.value;
 }
 
-window.setMasterKey = async function(){
-
-   await trusuesContract.methods.setMasterKey(masterKey).send({from:address});
-   console.log("masterKey Added");
+window.setMasterKey = function(){
+  passphrase = masterKey;
+  document.getElementById('masterKey').value = "";
 }
 
-function getAccount(event){
-    let name = event.target.name;
-    let val = event.target.value;
+window.getAccount = function(event){
+  let name = event.target.name;
+  let val = event.target.value;
     
-    account[name] = val; 
+  account[name] = val; 
 
 }
 
 
-async function addAccount(){
-  // for(key in account){
-  //   account.key = await EthCrypto.encryptWithPublicKey(publicKey, key)
-  // }
-    await trusuesContract.methods.addAccount(account.accountName,account.Username,account.Password).send({from : address});
-    console.log("done")
+window.addAccount = async function(){
+  website = CryptoJS.SHA256(account.accountName).toString(CryptoJS.enc.Hex);
+  for(data in account){
+    account[data] = CryptoJS.DES.encrypt(account[data],passphrase).toString(CryptoJS.enc.base64);
+  }
+  
+  await trusuesContract.methods.addAccount(website,account.Username,account.Password).send({from : address});
 }
 
-function setQuery(event){
-    search = event.target.value;
+window.setQuery = function(event){
+  search = event.target.value;
 }
 
-function getResult(){
-    console.log(address,masterKey, search)
-    trusuesContract.methods.mySearch(address,masterKey,search).call().then(res => {console.log(res)})
+window.getResult = async function(){
+  search = CryptoJS.SHA256(search).toString(CryptoJS.enc.Hex)
+  credentials = await trusuesContract.methods.getAccounts(address,search).call()
+  for(data in credentials){
+    credentials[data] = CryptoJS.DES.decrypt(credentials[data],passphrase).toString(CryptoJS.enc.Utf8);
+  }
+  document.getElementById('result').innerHTML = 'Username : ' + credentials.Username + '<br>' + 'Password : ' + credentials.Password; 
 }
 
 // varibles - contract
 var web3 = new Web3( Web3.givenProvider || 'HTTP://127.0.0.1:7545');
 var address = web3.currentProvider.selectedAddress;
-var abi =   [
-    {
-      "constant": true,
-      "inputs": [
-        {
-          "internalType": "address",
-          "name": "",
-          "type": "address"
-        },
-        {
-          "internalType": "string",
-          "name": "",
-          "type": "string"
-        },
-        {
-          "internalType": "string",
-          "name": "",
-          "type": "string"
-        }
-      ],
-      "name": "mySearch",
-      "outputs": [
-        {
-          "internalType": "string",
-          "name": "Username",
-          "type": "string"
-        },
-        {
-          "internalType": "string",
-          "name": "Password",
-          "type": "string"
-        }
-      ],
-      "payable": false,
-      "stateMutability": "view",
-      "type": "function"
-    },
-    {
-      "constant": false,
-      "inputs": [
-        {
-          "internalType": "string",
-          "name": "_mk",
-          "type": "string"
-        }
-      ],
-      "name": "setMasterKey",
-      "outputs": [],
-      "payable": false,
-      "stateMutability": "nonpayable",
-      "type": "function"
-    },
-    {
-      "constant": false,
-      "inputs": [
-        {
-          "internalType": "string",
-          "name": "_name",
-          "type": "string"
-        },
-        {
-          "internalType": "string",
-          "name": "_username",
-          "type": "string"
-        },
-        {
-          "internalType": "string",
-          "name": "_password",
-          "type": "string"
-        }
-      ],
-      "name": "addAccount",
-      "outputs": [],
-      "payable": false,
-      "stateMutability": "nonpayable",
-      "type": "function"
-    }
-  ]
-var trusuesContract = new web3.eth.Contract(abi,"0x411fD19601Cb5b98B9321Ccf436FD63926A528E3");
-console.log(web3.currentProvider.selectedAddress)
-
+var abi = [
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "name": "getAccounts",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "Username",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "Password",
+        "type": "string"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_name",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_username",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_password",
+        "type": "string"
+      }
+    ],
+    "name": "addAccount",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]
+var trusuesContract = new web3.eth.Contract(abi,"0xd59bb48cb49c4F5214cA5F8D9350278C18984978");
