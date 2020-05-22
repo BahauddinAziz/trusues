@@ -8,11 +8,13 @@ var address;
 var abi;
 var trusuesContract;
 
-async function enableEthereum() {
-
+window.enableEthereum = async function () {
   await window.ethereum.enable();
+}
+
+function setEthereum() {
   web3 = new Web3(Web3.givenProvider || 'HTTP://127.0.0.1:7545');
-  address = web3.currentProvider.selectedAddress;
+  address = ethereum.selectedAddress;
   abi = [
     {
       "constant": true,
@@ -74,8 +76,6 @@ async function enableEthereum() {
   trusuesContract = new web3.eth.Contract(abi, "0xf01e8a68382fe95e439b59f06ff6e87db53234f7");
 }
 
-window.onload = enableEthereum();
-
 
 
 // varibles-DOM
@@ -93,6 +93,7 @@ var credentials;
 
 // functions-DOM
 window.getMasterKey = function (event) {
+  setEthereum();
   masterKey = event.target.value;
 }
 
