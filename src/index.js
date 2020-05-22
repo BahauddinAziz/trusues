@@ -18,9 +18,7 @@ var website;
 var credentials;
 
 
-
 // functions-DOM
-
 
 window.getMasterKey = function(event){
   masterKey = event.target.value;
@@ -38,7 +36,6 @@ window.getAccount = function(event){
   account[name] = val; 
 
 }
-
 
 window.addAccount = async function(){
   website = CryptoJS.SHA256(account.accountName).toString(CryptoJS.enc.Hex);
@@ -123,4 +120,4 @@ var abi = [
     "type": "function"
   }
 ]
-var trusuesContract = new web3.eth.Contract(abi,"0xd59bb48cb49c4F5214cA5F8D9350278C18984978");
+var trusuesContract = new web3.eth.Contract(abi," 0xF01E8A68382fe95e439B59F06fF6e87db53234f7");
