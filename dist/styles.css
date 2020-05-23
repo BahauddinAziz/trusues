@@ -46,3 +46,8 @@ p{
     display: flex;
     flex-direction: column;
 }
+::placeholder{
+    font-size: small;
+    font-style: oblique;
+    color: #502944;
+}
