@@ -11,7 +11,7 @@ Back-End : web3, Ethereuim Block-chain
 [Web-App](trusues.web.app)
 
 ## Steps to Use  
-### >Step : 1  
+### Step : 1  
 Click 'Connect to Dapp' button  
 ![Step 1](https://github.com/BahauddinAziz/trusues/blob/master/Assets/1.png)  
 ### Step : 2  
