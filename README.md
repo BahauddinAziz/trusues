@@ -1,3 +1,5 @@
+[Notice : This app is in development phase, don't add your real credential. And you can only test it on Ropsten Test Netword]
+
 # Trusues
 A blockchain based password manager.  
 
@@ -9,7 +11,7 @@ Back-End : web3, Ethereuim Block-chain
 [Web-App](trusues.web.app)
 
 ## Steps to Use  
-### Step : 1  
+> Step : 1  
 Click 'Connect to Dapp' button  
 ![Step 1](https://github.com/BahauddinAziz/trusues/blob/master/Assets/1.png)  
 ### Step : 2  
