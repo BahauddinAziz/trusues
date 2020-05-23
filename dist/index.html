@@ -11,7 +11,7 @@
 <body>
     <button onclick="enableEthereum()" >Connect to Dapp</button>
     <div>
-        <input type="text" name="masterKey" id="masterKey" placeholder="Masterkey" onchange="getMasterKey(event)" >
+        <input type="text" name="masterKey" id="masterKey" placeholder="Enter your Masterkey" onchange="getMasterKey(event)" >
         <button onclick="setMasterKey()" id="masterKey-btn">Set Master Key</button>
     </div>
 
@@ -24,7 +24,7 @@
 
     <div>
         <input type="text" name="query" id="query" placeholder="Account Name" onchange="setQuery(event)" >
-        <button onclick="getResult()" place>Search</button>
+        <button onclick="getResult()" >Search</button>
     </div>
 
     <p id="result">  </p>
