@@ -1,0 +1,53 @@
+body{
+    display: flex;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+}
+
+div{
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+button{
+    background-color: #502944;
+    color: aliceblue;
+    box-sizing: border-box;
+    transform: scale(0.8);
+    border: none;
+    font-size: 10pt;
+    padding: 20px;
+    height: 50px;
+    border-radius: 6px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+input{
+     height: 35px;
+     font-size: 20pt;
+     margin: 10px;
+}
+
+p{
+    border: solid;
+    height: 50px;
+    width: 200px;
+    text-align: center;
+}
+
+#getAccount{
+    display: flex;
+    flex-direction: column;
+}
+::placeholder{
+    font-size: small;
+    font-style: oblique;
+    color: #502944;
+}

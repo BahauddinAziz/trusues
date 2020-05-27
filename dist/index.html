@@ -3,25 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="./styles.css"> -->
+    <link rel="stylesheet" href="./styles.css">
     <title>Trusues - ending trust-issues</title>
 </head>
+
+
 <body>
+    <button onclick="enableEthereum()" >Connect to Dapp</button>
     <div>
-        <input type="text" name="masterKey" id="masterKey" onchange="getMasterKey(event)" >
-        <button onclick="setMasterKey()">Set Master Key</button>
-    </div><br>
-    <div>
-        <input type="text" name="accountName" id="accountName" onchange="getAccount(event)" >
-        <input type="text" name="Username" id="Username" onchange="getAccount(event)" >
-        <input type="password" name="Password" id="Password" onchange="getAccount(event)" >
+        <input type="text" name="masterKey" id="masterKey" placeholder="Enter your Masterkey" onchange="getMasterKey(event)" >
+        <button onclick="setMasterKey()" id="masterKey-btn">Set Master Key</button>
+    </div>
+
+    <div id="getAccount">
+        <input type="text" name="accountName" id="accountName" placeholder="Account Name" onchange="getAccount(event)" >
+        <input type="text" name="Username" id="Username" placeholder="Username" onchange="getAccount(event)" >
+        <input type="password" name="Password" id="Password" placeholder="Password" onchange="getAccount(event)" >
         <button onclick="addAccount()">Add Account</button>
-    </div><br>
+    </div>
+
     <div>
-        <input type="text" name="query" id="query" onchange="setQuery(event)" >
-        <button onclick="getResult()">Search</button>
-    </div><br>
-    <p id="result"></p>
+        <input type="text" name="query" id="query" placeholder="Account Name" onchange="setQuery(event)" >
+        <button onclick="getResult()" >Search</button>
+    </div>
+
+    <p id="result">  </p>
     <script src="main.js"></script>
 </body>
 </html>
