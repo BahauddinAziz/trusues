@@ -6,7 +6,10 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    height: 100vh;
+    height: 115vh;
+    min-width: max-content;
+    overflow-y: scroll;
+    overflow-x: initial;
 }
 
 div{
@@ -16,30 +19,52 @@ div{
 }
 
 button{
-    background-color: #502944;
-    color: aliceblue;
+    background-color: aliceblue;
+    color: #502944;
     box-sizing: border-box;
     transform: scale(0.8);
     border: none;
-    font-size: 10pt;
+    font-size: 12pt;
     padding: 20px;
     height: 50px;
     border-radius: 6px;
     margin-left: 10px;
     cursor: pointer;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    transition: 0.2s;
+}
+
+button:hover{
+    color: aliceblue;
+    background: #502944;
+    box-shadow: 0 0 7px #502944 inset,
+                0 0 20px #502944,
+                0 0 7px #502944 inset;
+    border: none;
 }
 
 input{
      height: 35px;
-     font-size: 20pt;
+     font-size: 15pt;
      margin: 10px;
+     border: none;
+     background: #EAF0F1;
+     box-shadow: inset 3px 3px 15px #ffffff,
+                 -5px -5px 7px #d9d9d9;
+     border-radius: 5px;
 }
 
 p{
-    border: solid;
+    border-color: #DAE0E2;
+    background: #ffffff;
     height: 50px;
     width: 200px;
     text-align: center;
+    box-shadow: 3px 3px 15px #ffffff,
+                -5px -5px 7px #d9d9d9;
+    border-radius: 5px;
 }
 
 #getAccount{
