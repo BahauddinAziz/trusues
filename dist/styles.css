@@ -6,40 +6,75 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    height: 100vh;
+    height: 115vh;
+    min-width: max-content;
+    min-height: max-content;
+    overflow-x: visible;
+    overflow-y: scroll;
 }
 
 div{
-    height: auto;
+    height: max-content;
+    width: fit-content;
     display: flex;
     align-items: center;
+    background: #ffffff;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    border-radius: 5px;
+    box-shadow: -5px -5px 7px #EAF0F1,
+                4px 4px 20px #502944;
 }
 
 button{
     background-color: #502944;
-    color: aliceblue;
+    color: #EAF0F1;
     box-sizing: border-box;
     transform: scale(0.8);
     border: none;
-    font-size: 10pt;
+    font-size: 14pt;
     padding: 20px;
     height: 50px;
-    border-radius: 6px;
+    border-radius: 20px;
     margin-left: 10px;
     cursor: pointer;
+    position: relative;
+    display: flex;
+    text-transform: uppercase;
+}
+button:hover{
+    background-color: #502944;
+    color: aliceblue;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 2px 2px 12px #502944,
+                -2px -2px 12px #502944 inset;
+    transition-delay: 0.1s;
 }
 
 input{
      height: 35px;
-     font-size: 20pt;
+     font-size: 15pt;
      margin: 10px;
+     border: none;
+     border-radius: 20px;
+     color: #502944;
+     background: #f5f2f5a6;
+     padding: 5px;
+     align-content: center;
+     box-shadow: -6px -6px 8px #ffffff,
+                 3px 3px 5px #d9d9d9 inset;
 }
 
-p{
-    border: solid;
-    height: 50px;
+p{  
+    height: 80px;
     width: 200px;
     text-align: center;
+    box-shadow: 3px 3px 15px #502944,
+                -3px -3px 5px #EAF0F1 inset;
+    border-radius: 5px 0px 0px 5px;
 }
 
 #getAccount{
