@@ -1,13 +1,140 @@
-body {
+body{
+  background-color: #E9ECF4 ;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#centered-div{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#root{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+#def-inp{
+  position: relative;
+  width: 741px;
+  height: 103px;
+  margin-top: 38px;
+}
+
+#def-inp input{
+  padding-left: 50px;
+  font-size: 32px;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  outline: none;
+  color: #24428E;
+  border: solid 2px #bdc6dd;
+}
+
+#def-inp input::placeholder{
+  color: #bdc6dd;
+}
+
+#def-inp input:focus{
+  border-color: #24428E;
+}
+
+#def-btn{
+width: 209px;
+height: 68px;
+font-size: 22px;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+outline: none;
+border: none;
+cursor: pointer;
+background-color: #3a5599;
+color: white;
+border-radius: 4px;
+margin-top: 75px;
+margin-bottom: 10px;
+}
+
+#def-btn:hover{
+  background-color: #24428E;
+}
+
+#def-heading{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 77px;
+  color: #24428E;
+  margin-bottom: 150px;
+}
+
+
+#logo{
+  width: 343px;
+  height: 328px;
+}
+
+#tagline{
+  color: #24428E;
+  font-size: 49px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#home-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#VR{
+  border-left: solid #707070 1px;
+  height: 196px;
+}
+
+#home-btn{
+  padding: 50px;
+  text-align: center;
+}
+
+#profile{
+  position: absolute;
+  right: 0;
+  top: 30%;
+  height: 50px;
+  width: 50px;
+}
+
+P{
+  color: #24428E;
+  font-size: 54px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 0;
+}
+
+#result{
+  display: flex;
+  font-size: 42px;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: center;
+  align-items: center;
+  width: 405px;   
+  height: 371px;
+  background-color: white;
+  box-shadow: 3px 3px 6px #00000029;
+  text-align: center;
+  color: #24428E;
+}
+
+#sm-txt{
+  font-size: 20px;
 }
