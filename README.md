@@ -18,19 +18,19 @@ Click 'Connect to Dapp' button
 ![Step 1](https://github.com/BahauddinAziz/trusues/blob/master/doc/tutorial/Step1.png)  
 ### Step : 2  
 Click 'Connect' on metamask or any Ethereum based browser    
-![Step 2](https://github.com/BahauddinAziz/trusues/blob/master/doc/2.png)  
+![Step 2](https://github.com/BahauddinAziz/trusues/blob/master/doc/tutorial/Step2.png)  
 ### Step : 3  
 Type a masteKey and Click on 'set Master Key' button    
-![Step 3](https://github.com/BahauddinAziz/trusues/blob/master/doc/3.png)  
+![Step 3](https://github.com/BahauddinAziz/trusues/blob/master/doc/tutorial/Step3.png)  
 ### Step : 4  
 Enter your credentials and Click 'add account' button    
-![Step 4](https://github.com/BahauddinAziz/trusues/blob/master/doc/4.png)  
+![Step 4](https://github.com/BahauddinAziz/trusues/blob/master/doc/tutorial/Step4.png)  
 ### Step : 5  
 Click confirm and wait for the transaction to complete  
-![Step 5](https://github.com/BahauddinAziz/trusues/blob/master/doc/5.png)  
+![Step 5](https://github.com/BahauddinAziz/trusues/blob/master/doc/tutorial/Step5.png)  
 ### Step : 6  
 Type your account and click on 'search' button  
-![Step 6](https://github.com/BahauddinAziz/trusues/blob/master/doc/6.png)
+![Step 6](https://github.com/BahauddinAziz/trusues/blob/master/doc/tutorial/Step6.png)
 
 ## Our Algorithm
 ![our algorithm](https://github.com/BahauddinAziz/trusues/blob/master/doc/Trusues%20Algorithm.png)
