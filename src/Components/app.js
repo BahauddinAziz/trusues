@@ -43,7 +43,7 @@ export default class App extends Component {
         try{
             await window.ethereum.enable();
         }catch(e){
-            alert(e.message);
+            alert("No Ethereum Wallet Found");
         }
         await this.setState({
             web3: new Web3(Web3.givenProvider || 'HTTP://127.0.0.1:7545'),
