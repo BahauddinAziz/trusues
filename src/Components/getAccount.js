@@ -36,7 +36,7 @@ export default  class GetAccount extends Component {
             <div id="centered-div">
                 <p id="def-heading">ENTER ACCOUNT NAME</p>
                 <div id="def-inp">
-                    <input type="text" name="masterkey" id="" placeholder="Enter Account Name" onChange={this.query} />
+                    <input autoComplete="off" type="text" name="masterkey" id="" placeholder="Enter Account Name" onChange={this.query} />
                     <img src={Profile} alt="img" id="profile" />
                 </div>
                 <button id="def-btn" onClick={this.result}>Get Account</button>

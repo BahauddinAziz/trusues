@@ -42,13 +42,13 @@ export class AddAccount extends Component {
             <div id="centered-div">
                 <p id="def-heading">ENTER ACCOUNT DETAILS</p>
                 <div id="def-inp">
-                    <input type="text" name="accountName" id="" placeholder="Enter Account Name" onChange={this.getAccount} />
+                    <input autoComplete="off" type="text" name="accountName" id="" placeholder="Enter Account Name" onChange={this.getAccount} />
                 </div>
                 <div id="def-inp">
-                    <input type="text" name="Username" id="" placeholder="Enter Username" onChange={this.getAccount} />
+                    <input autoComplete="off" type="text" name="Username" id="" placeholder="Enter Username" onChange={this.getAccount} />
                 </div>
                 <div id="def-inp">
-                    <input type="password" name="Password" id="" placeholder="Enter Password" onChange={this.getAccount} />
+                    <input autoComplete="off" type="password" name="Password" id="" placeholder="Enter Password" onChange={this.getAccount} />
                 </div>
                 <button id="def-btn" onClick={this.addAccount} >Add Account</button>
             </div>
