@@ -6,8 +6,9 @@
 A blockchain based password manager.  
 
 ### Tech Stack Used  
-Front-End : HTLM, CSS, JS  
-Back-End : web3, Ethereuim Block-chain  
+Front-End : ReactJS  
+Back-End : web3, Ethereuim Block-chain
+Hosting : Firebase
 
 [Trusues-App](trusues.web.app)
 
