@@ -1,6 +1,6 @@
 [Notice : This app is in development phase, don't add your real credential. And you can only test it on Ropsten Test Netword]
 
-![logo](public/trusues.png =250x250)
+![logo](public/trusues.png | width=100)
 
 # Trusues
 A blockchain based password manager.  
