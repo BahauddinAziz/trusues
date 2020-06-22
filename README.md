@@ -1,4 +1,4 @@
-[Notice : This app is in development phase, don't add your real credential. And you can only test it on Ropsten Test Netword]
+[Notice : This app is in development phase, don't add your real credential. And you can only test it on Ropsten Test Network]
 
 <img src="public/trusues.png" height="500" width="500"/>  
 
