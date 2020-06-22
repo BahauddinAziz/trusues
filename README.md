@@ -1,7 +1,8 @@
 [Notice : This app is in development phase, don't add your real credential. And you can only test it on Ropsten Test Netword]
 
-<img src="public/trusues.png" height="500" width="500"/>
-Made By [Janvi Khera](https://www.linkedin.com/in/janvi-khera-7293681b0)
+<img src="public/trusues.png" height="500" width="500"/>  
+Made By 
+[Janvi Khera](https://www.linkedin.com/in/janvi-khera-7293681b0)
 
 # Trusues
 A blockchain based password manager.  
