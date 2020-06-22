@@ -14,16 +14,16 @@ Back-End : web3, Ethereuim Block-chain
 
 ## Steps to Use  
 ### Step : 1  
-Click 'Connect to Dapp' button  
+Connect to Dapp.  
 ![Step 1](https://github.com/BahauddinAziz/trusues/blob/master/doc/tutorial/Step1.png)  
 ### Step : 2  
-Click 'Connect' on metamask or any Ethereum based browser    
+Click on either 'Add Account' or 'Get Account' and enter your masterKey.    
 ![Step 2](https://github.com/BahauddinAziz/trusues/blob/master/doc/tutorial/Step2.png)  
 ### Step : 3  
-Type a masteKey and Click on 'set Master Key' button    
+Click on 'Add Account' and fill in account details to add an account.    
 ![Step 3](https://github.com/BahauddinAziz/trusues/blob/master/doc/tutorial/Step3.png)  
 ### Step : 4  
-Enter your credentials and Click 'add account' button    
+Click on 'Get Account' to query an account from your vault.    
 ![Step 4](https://github.com/BahauddinAziz/trusues/blob/master/doc/tutorial/Step4.png)
 
 ## Our Algorithm
