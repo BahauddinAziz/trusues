@@ -9,8 +9,7 @@ A blockchain based password manager.
 Front-End : HTLM, CSS, JS  
 Back-End : web3, Ethereuim Block-chain  
 
-### App Live on  
-[Web-App](trusues.web.app)
+[Trusues-App](trusues.web.app)
 
 ## Steps to Use  
 ### Step : 1  
