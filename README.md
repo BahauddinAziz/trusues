@@ -1,36 +1,32 @@
-[Notice : This app is in development phase, don't add your real credential. And you can only test it on Ropsten Test Netword]
+[Notice : This app is in development phase, don't add your real credential. And you can only test it on Ropsten Test Network]
 
-![logo](public/trusues.png)
+<img src="public/trusues.png" height="500" width="500"/>  
+
+[Credits](https://www.linkedin.com/in/janvi-khera-7293681b0)
 
 # Trusues
 A blockchain based password manager.  
 
 ### Tech Stack Used  
-Front-End : HTLM, CSS, JS  
-Back-End : web3, Ethereuim Block-chain  
+Front-End : ReactJS  
+Back-End : web3, Ethereuim Block-chain
+Hosting : Firebase
 
-### App Live on  
-[Web-App](trusues.web.app)
+[Trusues-App](trusues.web.app)
 
 ## Steps to Use  
 ### Step : 1  
-Click 'Connect to Dapp' button  
+> Connect to Dapp.  
 ![Step 1](https://github.com/BahauddinAziz/trusues/blob/master/doc/tutorial/Step1.png)  
 ### Step : 2  
-Click 'Connect' on metamask or any Ethereum based browser    
+> Click on either 'Add Account' or 'Get Account' and enter your masterKey.    
 ![Step 2](https://github.com/BahauddinAziz/trusues/blob/master/doc/tutorial/Step2.png)  
 ### Step : 3  
-Type a masteKey and Click on 'set Master Key' button    
+> Click on 'Add Account' and fill in account details to add an account.    
 ![Step 3](https://github.com/BahauddinAziz/trusues/blob/master/doc/tutorial/Step3.png)  
 ### Step : 4  
-Enter your credentials and Click 'add account' button    
-![Step 4](https://github.com/BahauddinAziz/trusues/blob/master/doc/tutorial/Step4.png)  
-### Step : 5  
-Click confirm and wait for the transaction to complete  
-![Step 5](https://github.com/BahauddinAziz/trusues/blob/master/doc/tutorial/Step5.png)  
-### Step : 6  
-Type your account and click on 'search' button  
-![Step 6](https://github.com/BahauddinAziz/trusues/blob/master/doc/tutorial/Step6.png)
+> Click on 'Get Account' to query an account from your vault.    
+![Step 4](https://github.com/BahauddinAziz/trusues/blob/master/doc/tutorial/Step4.png)
 
 ## Our Algorithm
 ![our algorithm](https://github.com/BahauddinAziz/trusues/blob/master/doc/Trusues%20Algorithm.png)
